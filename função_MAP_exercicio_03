@@ -1,0 +1,17 @@
+"""
+Exercício 3: Mapeamento de Múltiplos Iteráveis
+Objetivo: Calcular o peso ideal para uma lista de alturas, usando uma fórmula simplificada que considera 
+a altura e um fator de ajuste.
+
+Lista de alturas (em metros): alturas = [1.70, 1.65, 1.80, 1.75]
+
+Fatores de ajuste: fatores = [50, 48, 52, 51]
+
+Fórmula: peso_ideal = (altura * fator) - 10"""
+
+alturas = [1.70, 1.65, 1.80, 1.75]
+fatores = [50, 48, 52, 51]
+
+pesoIdeal = list(map(lambda altura, fator: round((altura * fator) - 10, 2), alturas, fatores))
+
+print(pesoIdeal)
